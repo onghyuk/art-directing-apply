@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Jisu</title>
+    <title>Dohyun</title>
     
     <style> 
         
@@ -27,7 +27,8 @@
          display: grid;
          grid-template-columns: 400px 1fr;
          line-height: 18px;
-         margin-top: 0px;
+         margin-top: 100px;
+      
         }
         
         .caption-container{
@@ -40,56 +41,181 @@
             
             max-width: 600px;
             
-            margin-bottom: 100px;
+            
             
         }
         
+       
         
         
+      
+        .mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  top:0px;
+  left:50%;
+  color: white;
+  font-size: 13px;
+  
+}
+
+/* Position the "next button" to the right */
+.next {
+  margin-left: 13px;
+  
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
         
     </style>
     
 </head>
 
 <body>
-    
-    <p align="middle">
-    <iframe src="https://player.vimeo.com/video/417856577?title=0&byline=0&portrait=0" width="1200px" height="900px" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-    </p>
-    
-    <div class="container">
+  <div style="margin-bottom: 500px"> 
+   <div class="container">
         <div class="caption-container">
-            <p class="caption">자기소개, 단채널 영상, 00' 50'', 2020</p>
+            <p class="caption">'왓이프전'아트디렉티 ('What-If' Exhibiton art directing)</p>
         </div>
         
         <div class="text-container">
-            <p class="text"></p>
-            
-            
-        </div>
+            <p class="text">HIPS(Hong-Ik Photography Study/홍익대학교 시각디자인과 사진예술소모임)의 '왓이프전'은 전시 직전에 시뮬레이션을 위해 제작하는 목업을 전시 전면으로 내세운 형태의 전시이다.
+
+실재하지만 허구인, 결국에는 가상일 수 밖에 없는 공간이라는 지점에 주목하여 그래픽 소스를 제작, 그것을 기반으로 포스터와 도록을 제작했다.</p>
+             </div>
     </div>
     
     
     <p align="middle">
-    <iframe src="https://player.vimeo.com/video/416857812?title=0&byline=0&portrait=0" width="1200px" height="900px" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    <img src="1/1.jpg" width="30%" class="mySlides fade">
+    <img src="1/2.jpg" width="60%" class="mySlides fade">
+    <img src="1/3.jpg" width="60%" class="mySlides fade">
+    <img src="1/4.jpg" width="60%" class="mySlides fade">
+     
     </p>
+          
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>3
+       
     
-    <div class="container">
+   
+     <div class="container">
         <div class="caption-container">
-            <p class="caption">논빌트인, 단채널 영상, 6' 26'', 2020</p>
+            <p class="caption">ㅇㅎㅎㅇ leaflet , process book</p>
         </div>
         
         <div class="text-container">
-            <p class="text">논빌트인은 럽유디 창고가 미술관 안에 세워질 때 물리적 상황을 기억하는 자신의 몸을 통해 설치 기간 동안 작성했던 현장 일지를 낭독하는 퍼포먼스 영상이다. 1장은 빈 전시장의 땅, 2장은 팀디포 오피스의 땅, 3장은 작품이 보관되는 파이브 스토리 타워의 땅을 노래한다. 영상은 럽유디의 현재 모습으로부터 창고가 세워지기 전의 전시장의 상태까지 역순으로 흐른다.</p>
-            <br>
-            <p class="text" style="color:#fef051; font-size:12px; font-weight: lighter; letter-spacing :0.3px;"><b>Love your depot</b>(이하 럽유디)는 작가 이주요가 제안하는 미술 작품을 위한 창고 시스템이다. 국립현대미술관(MMCA)의 《올해의 작가상 2019》에서 처음 소개되었다.<br> 
-                <b>Team depot</b>(팀디포)는 럽유디에 오피스를 두고 있으며 창고에 보관된 작품을 연구하고 해석하여 새로운 콘텐츠를 만드는 젊은 창작자 그룹이다.</p>
-            
-            
-        </div>
+            <p class="text">'ㅇㅎㅎㅇ'프로젝트는 ‘위험홍익’이라는 뜻으로, 관광을 테마로하여 관광버스를 대절한 투어를 통해 홍대라는 공간의 위험요소를 조명하는 퍼포먼스 팀 프로젝트이다.전반적인 프로젝트의 진행에 참여, 프로젝트의 리플렛과 프로세스북을 디자인했다.
+
+‘홍대’에서 시작하여 홍대라고 부를 수 있는 ‘공간’이라는 것에 집중했다. 그리고 ‘홍대의 공간성’으로 회귀하여 그것을 시각화했다.</p>
+             </div>
     </div>
     
+    <p align="middle">
+    <img src="2/1.jpg" width="60%" class="mySlides fade">
+    <img src="2/2.jpg" width="60%" class="mySlides fade">
+    <img src="2/3.jpg" width="60%" class="mySlides fade">
+    <img src="2/4.jpg" width="60%" class="mySlides fade">
+    <img src="2/5.jpg" width="60%" class="mySlides fade">
+     
+    </p>
+          
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>3
+       
+    
+  
+    <div class="container">
+        <div class="caption-container">
+            <p class="caption">얼굴분석시스템</p>
+        </div>
         
+        <div class="text-container">
+            <p class="text">'얼굴분석시스템'은 관상과 사진을 판매하는 부스를 제작하여 판매하는 프로젝트이다. 관상가와 사진과 모두 AI가 대체할 수 없는 직업군으로, 사이버펑크를 아트컨셉으로 하여 진행한 팀프로젝트이다. 사진과 그래픽디자인, 지면을 맡아 진행했다.<br><br>3 
+
+AI가 대체할 수 없는 행위를 무인판매부스라는 형태로 진행하며 사이버펑크라는 아트컨셉을 끌어와 그에 맞추어 포스터를 제작했다.
+</p>
+             </div>
+    </div>
+    
+    
+    <p align="middle">
+    <img src="3/1.png" width="60%" class="mySlides fade">
+    <img src="3/2.png" width="30%" class="mySlides fade">
+    <img src="3/3.jpg" width="30%" class="mySlides fade">
+    <img src="3/4.jpg" width="30%" class="mySlides fade">
+    
+     
+    </p>
+          
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)" >&#10095;</a>
+       
+    </div>
+   
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
     
 </body>
 </html>
