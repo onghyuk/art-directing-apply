@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dohyun</title>
+    
+    <style> 
+        
+        iframe{
+            margin-top:0px;
+            width: 90vw;
+        }
+        body{
+            background-color: black;
+        }
+        
+        p{
+            font-size: 13px;
+            color: white;
+            font-family: sans-serif;
+            
+        }
+        
+        .container {
+         position: relative;
+         left:15%;
+         display: grid;
+         grid-template-columns: 400px 1fr;
+         line-height: 18px;
+         margin-top: 100px;
+      
+        }
+        
+        .caption-container{
+           
+            
+            max-width: 300px;
+        }
+        
+        .text-container{
+            
+            max-width: 600px;
+            
+            
+            
+        }
+        
+        .page{
+            cursor: pointer;
+  position: relative;
+  top:0px;
+  left:70%;
+  color: white;
+  font-size: 13px;
+  
+        }
+        
+        .underpage{
+            cursor: pointer;
+  position: relative;
+  top:0px;
+  left:30%;
+  color: white;
+  font-size: 13px;
+        }
+        
+      
+        .mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  top:0px;
+  left:55%;
+  color: white;
+  font-size: 13px;
+  
+}
+
+/* Position the "next button" to the right */
+.next {
+  margin-left: 13px;
+  
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+        
+    </style>
+    
+</head>
+
+<body>
+ 
+     <div style="margin-bottom: 500px"> 
+  <div class="container">
+        <div class="caption-container">
+            <p class="caption">얼굴분석시스템</p>
+        </div>
+        
+        <div class="text-container">
+            <p class="text">'얼굴분석시스템'은 관상과 사진을 판매하는 부스를 제작하여 판매하는 프로젝트이다. 관상가와 사진과 모두 AI가 대체할 수 없는 직업군으로, 사이버펑크를 아트컨셉으로 하여 진행한 팀프로젝트이다. 사진과 그래픽디자인, 지면을 맡아 진행했다.<br><br>3 
+
+AI가 대체할 수 없는 행위를 무인판매부스라는 형태로 진행하며 사이버펑크라는 아트컨셉을 끌어와 그에 맞추어 포스터를 제작했다.
+</p>
+             </div>
+    </div>
+    
+    
+    <p align="middle">
+    <img src="3/1.png" width="60%" class="mySlides fade">
+    <img src="3/2.png" width="30%" class="mySlides fade">
+    <img src="3/3.jpg" width="30%" class="mySlides fade">
+    <img src="3/4.jpg" width="30%" class="mySlides fade">
+    </p>
+          
+   <a href="dohyun1.html" class="underpage">&#10094;&#10094;</a>   
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    
+    
+    
+    
+    
+    </div>
+   
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+    
+</body>
+</html>
+
+

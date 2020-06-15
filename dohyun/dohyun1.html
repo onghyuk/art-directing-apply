@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dohyun</title>
+    
+    <style> 
+        
+        iframe{
+            margin-top:0px;
+            width: 90vw;
+        }
+        body{
+            background-color: black;
+        }
+        
+        p{
+            font-size: 13px;
+            color: white;
+            font-family: sans-serif;
+            
+        }
+        
+        .container {
+         position: relative;
+         left:15%;
+         display: grid;
+         grid-template-columns: 400px 1fr;
+         line-height: 18px;
+         margin-top: 100px;
+      
+        }
+        
+        .caption-container{
+           
+            
+            max-width: 300px;
+        }
+        
+        .text-container{
+            
+            max-width: 600px;
+            
+            
+            
+        }
+        
+        .page{
+            cursor: pointer;
+  position: relative;
+  top:0px;
+  left:70%;
+  color: white;
+  font-size: 13px;
+  
+        }
+        
+        .underpage{
+            cursor: pointer;
+  position: relative;
+  top:0px;
+  left:30%;
+  color: white;
+  font-size: 13px;
+        }
+        
+        
+      
+        .mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  top:0px;
+  left:50%;
+  color: white;
+  font-size: 13px;
+  
+}
+
+/* Position the "next button" to the right */
+.next {
+  margin-left: 13px;
+  
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+        
+    </style>
+    
+</head>
+
+<body>
+  <div style="margin-bottom: 500px"> 
+   
+    
+       
+    
+   
+     <div class="container">
+        <div class="caption-container">
+            <p class="caption">ㅇㅎㅎㅇ leaflet , process book</p>
+        </div>
+        
+        <div class="text-container">
+            <p class="text">'ㅇㅎㅎㅇ'프로젝트는 ‘위험홍익’이라는 뜻으로, 관광을 테마로하여 관광버스를 대절한 투어를 통해 홍대라는 공간의 위험요소를 조명하는 퍼포먼스 팀 프로젝트이다.전반적인 프로젝트의 진행에 참여, 프로젝트의 리플렛과 프로세스북을 디자인했다.
+
+‘홍대’에서 시작하여 홍대라고 부를 수 있는 ‘공간’이라는 것에 집중했다. 그리고 ‘홍대의 공간성’으로 회귀하여 그것을 시각화했다.</p>
+             </div>
+    </div>
+    
+    <p align="middle">
+    <img src="2/1.jpg" width="60%" class="mySlides fade">
+    <img src="2/2.jpg" width="60%" class="mySlides fade">
+    <img src="2/3.jpg" width="60%" class="mySlides fade">
+    <img src="2/4.jpg" width="60%" class="mySlides fade">
+    <img src="2/5.jpg" width="60%" class="mySlides fade">
+     
+    </p>
+    <a href="dohyun.html" class="underpage">&#10094;&#10094;</a>   
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <a href="dohyun2.html" class="page">&#10095;&#10095;</a>
+       
+    
+  
+    
+       
+    </div>
+   
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+    
+</body>
+</html>
+
+
